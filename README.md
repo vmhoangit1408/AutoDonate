@@ -1,1 +1,1 @@
-# AutoDonateSnuckls
+# AutoDonate
