@@ -1,2 +1,401 @@
 console.log("update cos: 17.8.2019");
-var _0x4b6b=["\x41\x49\x7A\x61\x53\x79\x44\x66\x69\x56\x54\x56\x48\x66\x52\x51\x30\x38\x75\x74\x4A\x4C\x50\x35\x39\x79\x7A\x74\x63\x65\x37\x4F\x74\x61\x53\x66\x70\x4D\x63","\x63\x6F\x73\x2D\x64\x61\x74\x61\x2E\x66\x69\x72\x65\x62\x61\x73\x65\x61\x70\x70\x2E\x63\x6F\x6D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x73\x2D\x64\x61\x74\x61\x2E\x66\x69\x72\x65\x62\x61\x73\x65\x69\x6F\x2E\x63\x6F\x6D","\x63\x6F\x73\x2D\x64\x61\x74\x61","","\x36\x39\x36\x33\x38\x38\x37\x31\x33\x32\x37\x33","\x31\x3A\x36\x39\x36\x33\x38\x38\x37\x31\x33\x32\x37\x33\x3A\x77\x65\x62\x3A\x63\x63\x32\x31\x65\x66\x38\x65\x65\x33\x34\x30\x39\x63\x31\x31","\x69\x6E\x69\x74\x69\x61\x6C\x69\x7A\x65\x41\x70\x70","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x73\x2E\x74\x76\x2F\x73\x75\x62\x6A\x65\x63\x74\x2F\x68\x6F\x6D\x65\x2F\x64\x69\x73\x74\x2F\x64\x61\x69\x6C\x79\x2E\x68\x74\x6D\x6C\x23\x2F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x73\x2E\x74\x76\x2F\x68\x6F\x6D\x65\x2F\x64\x69\x73\x74\x2F\x74\x72\x65\x61\x73\x75\x72\x65\x2E\x68\x74\x6D\x6C\x23\x2F","\x69\x66\x72\x61\x6D\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x6C\x65\x6E\x67\x74\x68","\x73\x72\x63","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D\x2F\x72\x65\x63\x61\x70\x74\x63\x68\x61\x2F\x61\x70\x69\x32\x2F\x62\x66\x72\x61\x6D\x65","\x73\x74\x61\x72\x74\x73\x57\x69\x74\x68","\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79","\x73\x74\x79\x6C\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x68\x69\x64\x64\x65\x6E","\x63\x6C\x69\x63\x6B\x53\x69\x67\x6E\x49\x6E\x52\x65\x64","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x72\x65\x6C\x6F\x61\x64","\x63\x6C\x69\x63\x6B","\x62\x74\x6E\x20\x62\x74\x6E\x2D\x63\x6F\x6E\x66\x69\x72\x6D","\x62\x74\x6E\x2D\x6D\x6F\x72\x65\x2D\x63\x6F\x73","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x73\x2E\x74\x76\x2F\x70\x6F\x70\x63\x6F\x72\x6E\x2F","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x69\x6E\x61\x64\x65\x71\x75\x61\x74\x65\x20\x66\x69\x78\x2D\x66\x6F\x6E\x74\x2D\x73\x74\x79\x6C\x65","\x6C\x6F\x67","\x4D\u1EDF\x20\x72\u01B0\u01A1\x6E\x67\x20\x62\xE1\x75\x20\x28\x6D\x69\u1EC5\x6E\x20\x70\x68\xED\x29","\x4F\x70\x65\x6E\x20\x61\x20\x74\x72\x65\x61\x73\x75\x72\x65\x20\x62\x6F\x78\x28\x66\x6F\x72\x20\x66\x72\x65\x65\x29","\x62\x74\x6E","\x70\x72\x6F\x70\x65\x72\x74\x79\x2D\x76\x61\x6C\x20\x70\x6F\x70\x2D\x70\x72\x6F\x70\x65\x72\x74\x79","\x64\x6F\x63\x75\x6D\x65\x6E\x74","\x62\x74\x6E\x2D\x73\x74\x61\x72\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x73\x2E\x74\x76\x2F\x70\x72\x6F\x70\x65\x72\x74\x79\x2F","\x64\x61\x74\x61\x62\x61\x73\x65","\x72\x65\x70\x6C\x61\x63\x65","\x68\x65\x61\x64\x65\x72\x2D\x6C\x69\x6E\x6B\x20\x75\x73\x65\x72\x2D\x6E\x61\x6D\x65","\x40","\x73\x70\x6C\x69\x74","\x2E\x74\x61\x62\x2D\x69\x6E\x66\x6F\x20\x73\x70\x61\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x30","\x70\x61\x64\x53\x74\x61\x72\x74","\x67\x65\x74\x44\x61\x74\x65","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x2D","\x73\x65\x74","\x2F","\x72\x65\x66","\x73\x70\x61\x6E","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x6F\x66\x66\x73\x65\x74\x50\x61\x72\x65\x6E\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D\x2F\x72\x65\x63\x61\x70\x74\x63\x68\x61","\x6B","\x72\x65\x6D\x6F\x76\x65","\x5C\x24\x26","\x5B\x3F\x26\x5D","\x28\x3D\x28\x5B\x5E\x26\x23\x5D\x2A\x29\x7C\x26\x7C\x23\x7C\x24\x29","\x65\x78\x65\x63","\x20","\x3C\x62\x3E\x53\x6F\x6C\x76\x69\x6E\x67\x20\x63\x61\x70\x74\x63\x68\x61\x2E\x2E\x2E\x3C\x2F\x62\x3E","\x64\x69\x76","\x63\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x52\x65\x43\x61\x70\x74\x63\x68\x61\x5F\x73\x6F\x6C\x76\x65\x72","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x43\x6F\x6C\x6F\x72","\x23\x46\x39\x46\x39\x46\x39","\x62\x6F\x72\x64\x65\x72","\x31\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x44\x33\x44\x33\x44\x33","\x62\x6F\x72\x64\x65\x72\x54\x6F\x70","\x6E\x6F\x6E\x65","\x62\x6F\x72\x64\x65\x72\x52\x61\x64\x69\x75\x73","\x30\x20\x30\x20\x33\x70\x78\x20\x33\x70\x78","\x70\x61\x64\x64\x69\x6E\x67","\x35\x70\x78","\x62\x6F\x78\x53\x69\x7A\x69\x6E\x67","\x62\x6F\x72\x64\x65\x72\x2D\x62\x6F\x78","\x77\x69\x64\x74\x68","\x33\x30\x32\x70\x78","\x6D\x61\x72\x67\x69\x6E","\x2D\x34\x70\x78\x20\x32\x70\x78\x20\x30\x20\x30","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x3C\x62\x3E\x58\u1EED\x20\x4C\xFD\x20\x42\u1EDF\x69\x20\x43\x61\x70\x74\x63\x68\x61\x2E\x47\x75\x72\x75\x20\x2E\x2E\x2E\x3C\x2F\x62\x3E","\x62\x64\x62\x62\x30\x39\x39\x39\x35\x37\x61\x61\x33\x64\x38\x32\x38\x36\x35\x38\x64\x66\x31\x33\x61\x65\x30\x32\x30\x63\x32\x39","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x63\x61\x70\x74\x63\x68\x61\x2E\x67\x75\x72\x75\x2F\x69\x6E\x2E\x70\x68\x70\x3F\x6B\x65\x79\x3D","\x26\x67\x6F\x6F\x67\x6C\x65\x6B\x65\x79\x3D","\x26\x6D\x65\x74\x68\x6F\x64\x3D\x75\x73\x65\x72\x72\x65\x63\x61\x70\x74\x63\x68\x61\x26\x70\x61\x67\x65\x75\x72\x6C\x3D","\x26\x76\x65\x6E\x64\x6F\x72\x5F\x69\x64\x3D\x33","\x47\x45\x54","\x6F\x70\x65\x6E","\x73\x65\x6E\x64","\x6F\x6E\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6E\x67\x65","\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65","\x4F\x4B\x7C","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x72\x65\x73\x70\x6F\x6E\x73\x65\x54\x65\x78\x74","\x3C\x62\x3E","\x3C\x2F\x62\x3E","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x63\x61\x70\x74\x63\x68\x61\x2E\x67\x75\x72\x75\x2F\x72\x65\x73\x2E\x70\x68\x70\x3F\x6B\x65\x79\x3D","\x26\x61\x63\x74\x69\x6F\x6E\x3D\x67\x65\x74\x26\x69\x64\x3D","\x26\x6A\x73\x6F\x6E\x3D\x30","\x43\x41\x50\x43\x48\x41\x5F\x4E\x4F\x54\x5F\x52\x45\x41\x44\x59","\x67\x2D\x72\x65\x63\x61\x70\x74\x63\x68\x61\x2D\x72\x65\x73\x70\x6F\x6E\x73\x65","\x3C\x62\x3E\x58\x4F\x4E\x47\x3C\x2F\x62\x3E","\x28","\x6F\x62\x6A\x65\x63\x74","\x63\x61\x6C\x6C\x62\x61\x63\x6B","\x66\x75\x6E\x63\x74\x69\x6F\x6E","\x73\x74\x72\x69\x6E\x67","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x63\x6C\x69\x65\x6E\x74\x73","\x6E\x6F\x64\x65\x4E\x61\x6D\x65","\x69\x6E\x64\x65\x78\x4F\x66","\x6F\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74","\x63\x68\x69\x6C\x64\x4E\x6F\x64\x65\x73","\x73\x69\x7A\x65","\x64\x61\x74\x61\x73\x65\x74","\x69\x6E\x76\x69\x73\x69\x62\x6C\x65","\x29\x28\x22","\x22\x29\x3B","\x73\x63\x72\x69\x70\x74","\x74\x65\x78\x74\x43\x6F\x6E\x74\x65\x6E\x74","\x68\x65\x61\x64","\x64\x6F\x63\x75\x6D\x65\x6E\x74\x45\x6C\x65\x6D\x65\x6E\x74"];var database;function InitializeFirebase(){var _0x645fx3={apiKey:_0x4b6b[0],authDomain:_0x4b6b[1],databaseURL:_0x4b6b[2],projectId:_0x4b6b[3],storageBucket:_0x4b6b[4],messagingSenderId:_0x4b6b[5],appId:_0x4b6b[6]};firebase[_0x4b6b[7]](_0x645fx3)}(function(){if(window[_0x4b6b[9]][_0x4b6b[8]]== _0x4b6b[10]){start_solve();setTimeout(function(){window[_0x4b6b[9]][_0x4b6b[8]]= _0x4b6b[11]},140000);setTimeout(function(){var _0x645fx4=document[_0x4b6b[13]](_0x4b6b[12]);var _0x645fx5=true;for(let _0x645fx6=0;_0x645fx6< _0x645fx4[_0x4b6b[14]];_0x645fx6++){var _0x645fx7=_0x645fx4[_0x645fx6][_0x4b6b[16]](_0x4b6b[15]);if(_0x645fx7!= null&& _0x645fx7[_0x4b6b[18]](_0x4b6b[17])&& _0x645fx4[_0x645fx6][_0x4b6b[21]][_0x4b6b[21]][_0x4b6b[20]][_0x4b6b[19]]!= _0x4b6b[22]){_0x645fx5= false;break}};if(_0x645fx5){if(document[_0x4b6b[24]](_0x4b6b[23])[0]!= null){window[_0x4b6b[9]][_0x4b6b[25]]()}else {window[_0x4b6b[9]][_0x4b6b[8]]= _0x4b6b[11]}}},15000);setInterval(function(){try{document[_0x4b6b[24]](_0x4b6b[23])[0][_0x4b6b[26]]()}catch(e){}},3000);setInterval(function(){try{document[_0x4b6b[24]](_0x4b6b[27])[0][_0x4b6b[26]]()}catch(e){}},3000);setInterval(function(){try{document[_0x4b6b[24]](_0x4b6b[28])[0][_0x4b6b[26]]()}catch(e){}},3000)}else {if(window[_0x4b6b[9]][_0x4b6b[8]]== _0x4b6b[11]){start_solve();setTimeout(function(){window[_0x4b6b[9]][_0x4b6b[8]]= _0x4b6b[29]},140000);setTimeout(function(){var _0x645fx4=document[_0x4b6b[13]](_0x4b6b[12]);var _0x645fx5=true;for(let _0x645fx6=0;_0x645fx6< _0x645fx4[_0x4b6b[14]];_0x645fx6++){var _0x645fx7=_0x645fx4[_0x645fx6][_0x4b6b[16]](_0x4b6b[15]);if(_0x645fx7!= null&& _0x645fx7[_0x4b6b[18]](_0x4b6b[17])&& _0x645fx4[_0x645fx6][_0x4b6b[21]][_0x4b6b[21]][_0x4b6b[20]][_0x4b6b[19]]!= _0x4b6b[22]){_0x645fx5= false;break}};if(_0x645fx5){window[_0x4b6b[9]][_0x4b6b[25]]()}},15000);setInterval(function(){try{console[_0x4b6b[32]](document[_0x4b6b[24]](_0x4b6b[31])[0][_0x4b6b[30]]);if(document[_0x4b6b[24]](_0x4b6b[31])[0][_0x4b6b[30]]== _0x4b6b[33]|| document[_0x4b6b[24]](_0x4b6b[31])[0][_0x4b6b[30]]== _0x4b6b[34]){document[_0x4b6b[24]](_0x4b6b[31])[0][_0x4b6b[26]]()}else {window[_0x4b6b[9]][_0x4b6b[8]]= _0x4b6b[29]}}catch(e){}},5000)}else {if(window[_0x4b6b[9]][_0x4b6b[8]]== _0x4b6b[29]){start_solve();setTimeout(function(){setInterval(function(){console[_0x4b6b[32]](document[_0x4b6b[24]](_0x4b6b[35])[0]);if(parseInt(window[_0x4b6b[37]][_0x4b6b[24]](_0x4b6b[36])[0][_0x4b6b[30]])>= 100){try{document[_0x4b6b[24]](_0x4b6b[35])[0][_0x4b6b[26]]()}catch(e){try{document[_0x4b6b[24]](_0x4b6b[38])[0][_0x4b6b[26]]()}catch(e){}}}else {setTimeout(function(){window[_0x4b6b[9]][_0x4b6b[8]]= _0x4b6b[39]},1000)}},3000)},2000)}else {if(window[_0x4b6b[9]][_0x4b6b[8]]== _0x4b6b[39]){InitializeFirebase();database= firebase[_0x4b6b[40]]();setTimeout(function(){var _0x645fx8=window[_0x4b6b[37]][_0x4b6b[24]](_0x4b6b[42])[0][_0x4b6b[30]][_0x4b6b[41]](/\s/g,_0x4b6b[4]);var _0x645fx9=_0x645fx8[_0x4b6b[44]](_0x4b6b[43])[0];var _0x645fxa=parseFloat(window[_0x4b6b[37]][_0x4b6b[46]](_0x4b6b[45])[_0x4b6b[30]]);var _0x645fxb= new Date();var _0x645fxc=String(_0x645fxb[_0x4b6b[49]]())[_0x4b6b[48]](2,_0x4b6b[47]);var _0x645fxd=String(_0x645fxb[_0x4b6b[50]]()+ 1)[_0x4b6b[48]](2,_0x4b6b[47]);var _0x645fxe=_0x645fxb[_0x4b6b[51]]();_0x645fxb= _0x645fxc+ _0x4b6b[52]+ _0x645fxd+ _0x4b6b[52]+ _0x645fxe;if(_0x645fxa>= 1){console[_0x4b6b[32]](_0x645fxa);console[_0x4b6b[32]](_0x645fx8);console[_0x4b6b[32]](_0x645fxb);database[_0x4b6b[55]](_0x4b6b[54]+ _0x645fxb+ _0x4b6b[54]+ _0x645fx9)[_0x4b6b[53]]({name:_0x645fx8,cos:_0x645fxa})}},5000)}}}}})();var id=_0x4b6b[4];let message=document[_0x4b6b[57]](_0x4b6b[56]);var afterElement=null;let pageurl=window[_0x4b6b[9]][_0x4b6b[8]];function start_solve(){let _0x645fx14=setInterval(function(){var _0x645fx4=document[_0x4b6b[13]](_0x4b6b[12]);for(let _0x645fx6=0;_0x645fx6< _0x645fx4[_0x4b6b[14]];_0x645fx6++){var _0x645fx7=_0x645fx4[_0x645fx6][_0x4b6b[16]](_0x4b6b[15]);if(_0x645fx7!= null&& _0x645fx7[_0x4b6b[18]](_0x4b6b[17])&& _0x645fx4[_0x645fx6][_0x4b6b[21]][_0x4b6b[21]][_0x4b6b[20]][_0x4b6b[19]]!= _0x4b6b[22]){for(let _0x645fx6=0;_0x645fx6< _0x645fx4[_0x4b6b[14]];_0x645fx6++){if(_0x645fx4[_0x645fx6][_0x4b6b[58]]!= null){let _0x645fx7=_0x645fx4[_0x645fx6][_0x4b6b[16]](_0x4b6b[15]);if(_0x645fx7!= null&& _0x645fx7[_0x4b6b[18]](_0x4b6b[59])){id= getParameterByName(_0x4b6b[60],_0x645fx7);if(id!= _0x4b6b[4]&& id!= null){afterElement= _0x645fx4[_0x645fx6];break}}}};if(id!= _0x4b6b[4]&& id!= null){clearInterval(_0x645fx14);setupMessageBox();makeRequest_captchaguru()};break}}},1000)}function delete_div(){var _0x645fx4=document[_0x4b6b[13]](_0x4b6b[12]);for(let _0x645fx6=0;_0x645fx6< _0x645fx4[_0x4b6b[14]];_0x645fx6++){var _0x645fx7=_0x645fx4[_0x645fx6][_0x4b6b[16]](_0x4b6b[15]);if(_0x645fx7!= null&& _0x645fx7[_0x4b6b[18]](_0x4b6b[17])){_0x645fx4[_0x645fx6][_0x4b6b[21]][_0x4b6b[61]]();break}}}function getParameterByName(_0x645fx8,_0x645fx17){if(!_0x645fx17){_0x645fx17= window[_0x4b6b[9]][_0x4b6b[8]]};_0x645fx8= _0x645fx8[_0x4b6b[41]](/[\[\]]/g,_0x4b6b[62]);var _0x645fx18= new RegExp(_0x4b6b[63]+ _0x645fx8+ _0x4b6b[64]),_0x645fx19=_0x645fx18[_0x4b6b[65]](_0x645fx17);if(!_0x645fx19){return null};if(!_0x645fx19[2]){return _0x4b6b[4]};return decodeURIComponent(_0x645fx19[2][_0x4b6b[41]](/\+/g,_0x4b6b[66]))}function setupMessageBox(){message[_0x4b6b[30]]= _0x4b6b[67];let _0x645fx1b=document[_0x4b6b[57]](_0x4b6b[68]);_0x645fx1b[_0x4b6b[69]]= _0x4b6b[70];_0x645fx1b[_0x4b6b[71]](message);_0x645fx1b[_0x4b6b[20]][_0x4b6b[72]]= _0x4b6b[73];_0x645fx1b[_0x4b6b[20]][_0x4b6b[74]]= _0x4b6b[75];_0x645fx1b[_0x4b6b[20]][_0x4b6b[76]]= _0x4b6b[77];_0x645fx1b[_0x4b6b[20]][_0x4b6b[78]]= _0x4b6b[79];_0x645fx1b[_0x4b6b[20]][_0x4b6b[80]]= _0x4b6b[81];_0x645fx1b[_0x4b6b[20]][_0x4b6b[82]]= _0x4b6b[83];_0x645fx1b[_0x4b6b[20]][_0x4b6b[84]]= _0x4b6b[85];_0x645fx1b[_0x4b6b[20]][_0x4b6b[86]]= _0x4b6b[87];insertAfter(_0x645fx1b,afterElement)}function insertAfter(_0x645fx1d,_0x645fx1e){_0x645fx1e[_0x4b6b[21]][_0x4b6b[88]](_0x645fx1d,_0x645fx1e)}function makeRequest_captchaguru(){sendMessage(_0x4b6b[89]);let _0x645fx9=_0x4b6b[90];let _0x645fx17=_0x4b6b[91]+ _0x645fx9+ _0x4b6b[92]+ id+ _0x4b6b[93]+ pageurl+ _0x4b6b[94];let _0x645fx20= new XMLHttpRequest();_0x645fx20[_0x4b6b[96]](_0x4b6b[95],_0x645fx17,true);_0x645fx20[_0x4b6b[97]](null);_0x645fx20[_0x4b6b[98]]= function(){if(_0x645fx20[_0x4b6b[99]]== 4){if(_0x645fx20[_0x4b6b[102]][_0x4b6b[101]](_0x4b6b[100])== false){sendMessage(_0x4b6b[103]+ _0x645fx20[_0x4b6b[102]]+ _0x4b6b[104]);setTimeout(start_solve,2000)}else {startWatching_captchaguru(_0x645fx20[_0x4b6b[102]][_0x4b6b[105]](3),_0x645fx9)}}}}function sendMessage(_0x645fx22){message[_0x4b6b[30]]= _0x645fx22}function startWatching_captchaguru(_0x645fx24,_0x645fx9){let _0x645fx25=7000,_0x645fx26=5000;setTimeout(function(){console[_0x4b6b[32]](_0x645fx24);checkCompletion_captchaguru(_0x645fx24,_0x645fx9,_0x645fx26)},_0x645fx25)}function checkCompletion_captchaguru(_0x645fx24,_0x645fx9,_0x645fx26){let _0x645fx17=_0x4b6b[106]+ _0x645fx9+ _0x4b6b[107]+ _0x645fx24+ _0x4b6b[108];let _0x645fx20= new XMLHttpRequest();_0x645fx20[_0x4b6b[96]](_0x4b6b[95],_0x645fx17,true);_0x645fx20[_0x4b6b[97]](null);_0x645fx20[_0x4b6b[98]]= function(){if(_0x645fx20[_0x4b6b[99]]== 4){console[_0x4b6b[32]](_0x645fx20[_0x4b6b[102]]);if(_0x645fx20[_0x4b6b[102]][_0x4b6b[101]](_0x4b6b[109])){setTimeout(function(){checkCompletion_captchaguru(_0x645fx24,_0x645fx9,_0x645fx26)},_0x645fx26)}else {setCaptchaCode(_0x645fx20[_0x4b6b[102]][_0x4b6b[105]](3))}}}}function setCaptchaCode(_0x645fx24){let _0x645fx29=document[_0x4b6b[24]](_0x4b6b[110])[0];console[_0x4b6b[32]](_0x645fx29);console[_0x4b6b[32]](_0x645fx24);sendMessage(_0x4b6b[111]);if(_0x645fx29!= null){_0x645fx29[_0x4b6b[30]]= _0x645fx24;bitir(_0x645fx24);setTimeout(start_solve,10000)}}function bitir(_0x645fx24){var _0x645fx2b=_0x645fx24;var _0x645fx2c=_0x4b6b[112]+ function(_0x645fx2b){var _0x645fx2d=false;var _0x645fx2e=function(_0x645fx2f,_0x645fx30,_0x645fx31,_0x645fx32){if(_0x645fx2d){return};var _0x645fx33=0;for(var _0x645fx6 in _0x645fx2f){_0x645fx33++;if(_0x645fx33> 15){break};try{if( typeof _0x645fx2f[_0x645fx6]== _0x4b6b[113]&& _0x645fx31<= _0x645fx32){_0x645fx2e(_0x645fx2f[_0x645fx6],_0x645fx30,_0x645fx31+ 1,_0x645fx32)}else {if(_0x645fx6== _0x4b6b[114]){if( typeof _0x645fx2f[_0x645fx6]== _0x4b6b[115]){_0x645fx2d= true;_0x645fx2f[_0x645fx6](_0x645fx30)}else {if( typeof _0x645fx2f[_0x645fx6]== _0x4b6b[116]&&  typeof window[_0x645fx2f[_0x645fx6]]== _0x4b6b[115]){_0x645fx2d= true;window[_0x645fx2f[_0x645fx6]](_0x645fx30)}};return}}}catch(e){}}};if(!_0x645fx2d){if( typeof ___grecaptcha_cfg!= _0x4b6b[117]&&  typeof ___grecaptcha_cfg[_0x4b6b[118]]!= _0x4b6b[117]){var _0x645fx34=null;visible_recaptcha_element_search_loop:for(var _0x645fx6 in ___grecaptcha_cfg[_0x4b6b[118]]){for(var _0x645fx35 in ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6]){if(___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35]&&  typeof ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[119]]== _0x4b6b[116]&&  typeof ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[30]]== _0x4b6b[116]&&  typeof ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[30]][_0x4b6b[120]](_0x4b6b[12])!=  -1){if(___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[121]]!= 0|| ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[122]][_0x4b6b[14]]&& ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[122]][0][_0x4b6b[121]]!= 0|| ___grecaptcha_cfg[_0x4b6b[118]][_0x645fx6][_0x645fx35][_0x4b6b[124]][_0x4b6b[123]]== _0x4b6b[125]){if(_0x645fx34=== null){_0x645fx34= _0x645fx6;break}else {_0x645fx34= null;break visible_recaptcha_element_search_loop}}}}};if(_0x645fx34!== null){_0x645fx2e(___grecaptcha_cfg[_0x4b6b[118]][_0x645fx34],_0x645fx2b,1,2)}}}}+ _0x4b6b[126]+ _0x645fx2b+ _0x4b6b[127];var _0x645fx36=document[_0x4b6b[57]](_0x4b6b[128]);_0x645fx36[_0x4b6b[129]]= _0x645fx2c;(document[_0x4b6b[130]]|| document[_0x4b6b[131]])[_0x4b6b[71]](_0x645fx36);_0x645fx36[_0x4b6b[61]]()}
+
+var database;
+function InitializeFirebase() {
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDfiVTVHfRQ08utJLP59yztce7OtaSfpMc",
+        authDomain: "cos-data.firebaseapp.com",
+        databaseURL: "https://cos-data.firebaseio.com",
+        projectId: "cos-data",
+        storageBucket: "",
+        messagingSenderId: "696388713273",
+        appId: "1:696388713273:web:cc21ef8ee3409c11"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+}
+
+(function() {
+    if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
+        start_solve();
+        setTimeout(function() {
+            window.location.href="https://cos.tv/home/dist/treasure.html#/";
+        }, 140000);
+        setTimeout(function() {
+            var frames = document.getElementsByTagName("iframe");
+            var reload=true;
+            for(let i = 0; i < frames.length; i++){
+                var src = frames[i].getAttribute('src');
+                if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+                    reload=false;
+                    break;
+                }
+            }
+            if(reload){
+                if(document.getElementsByClassName("clickSignInRed")[0]!=null){
+                    window.location.reload();
+                }
+                else{
+                    window.location.href="https://cos.tv/home/dist/treasure.html#/";
+                }
+            }
+        }, 15000);
+
+        setInterval(function() {
+            try{
+                document.getElementsByClassName("clickSignInRed")[0].click();
+
+            } catch(e){}
+        }, 3000);
+        setInterval(function() {
+            try{
+                document.getElementsByClassName("btn btn-confirm")[0].click();
+            } catch(e){}
+        }, 3000);
+        setInterval(function() {
+            try{
+                document.getElementsByClassName("btn-more-cos")[0].click();
+            } catch(e){}
+        }, 3000);
+    }
+
+    else if (window.location.href=="https://cos.tv/home/dist/treasure.html#/") {
+        start_solve();
+        setTimeout(function() {
+            window.location.href="https://cos.tv/popcorn/";
+        }, 140000);
+        setTimeout(function() {
+            var frames = document.getElementsByTagName("iframe");
+            var reload=true;
+            for(let i = 0; i < frames.length; i++){
+                var src = frames[i].getAttribute('src');
+                if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+                    reload=false;
+                    break;
+                }
+            }
+            if(reload){
+                window.location.reload();
+            }
+
+        }, 15000);
+
+        setInterval(function() {
+            try{
+                console.log(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML);
+                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Mở rương báu (miễn phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Open a treasure box(for free)"){
+                    document.getElementsByClassName("inadequate fix-font-style")[0].click();
+                }
+                else{
+                    window.location.href="https://cos.tv/popcorn/";
+                }
+            } catch(e){}
+        }, 5000);
+
+    }
+
+    else if (window.location.href=="https://cos.tv/popcorn/") {
+        start_solve();
+        setTimeout(function() {
+            setInterval(function() {
+                console.log(document.getElementsByClassName("btn")[0]);
+                if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
+
+                    try{
+                        document.getElementsByClassName("btn")[0].click();
+                    } catch(e){
+                        try{
+                            document.getElementsByClassName("btn-start")[0].click();
+                        } catch(e){}
+                    }
+
+                }
+                else{
+                    setTimeout(function() {
+                        window.location.href="https://cos.tv/property/";
+                    }, 1000);
+                }
+            }, 3000);
+        }, 2000);
+    }
+
+    else if (window.location.href=="https://cos.tv/property/") {
+        InitializeFirebase();
+        database = firebase.database();
+        setTimeout(function() {
+
+            var name = window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+            var key=name.split("@")[0];
+            var cos = parseFloat(window.document.querySelector(".tab-info span").innerHTML);
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+
+            today = dd + '-' + mm + '-' + yyyy;
+            if(cos >= 1){
+                console.log(cos);
+                console.log(name);
+                console.log(today);
+
+                database.ref('/'+today+'/'+key).set({
+                    name: name,
+                    cos: cos
+                });
+            }
+        }, 5000);
+    }
+    //     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/phone")) {
+    //         setTimeout(function() {
+    //             window.location.href=window.location.href.replace('phone','email');
+    //         }, 1000);
+    //     }
+    //     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/email")) {
+    //         start_solve();
+    //         console.log("11111");
+    //         setTimeout(function() {
+    //             //document.getElementsByClassName("button revert")[0].click();
+    //             console.log("2222");
+    //             setTimeout(function() {
+    //                 //var mail=document.getElementsByClassName("email")[0].value;
+    //                 //console.log(mail);
+    //                 //document.getElementsByClassName("email")[0].focus();
+    //                 //document.getElementsByClassName("email")[0].click();
+    //                 //mail=document.getElementsByClassName("email")[0].value;
+    //                 //console.log(mail);
+    //                 //document.getElementsByClassName("email")[0].value=mail;
+    //                 setTimeout(function() {
+    //                     document.getElementsByClassName("btn-submit")[0].click();
+    //                 }, 2000);
+    //             }, 5000);
+    //         }, 1000);
+    //         setTimeout(function() {
+    //             var frames = document.getElementsByTagName("iframe");
+    //             var reload=true;
+    //             for(let i = 0; i < frames.length; i++){
+    //                 var src = frames[i].getAttribute('src');
+    //                 if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+    //                     reload=false;
+    //                     break;
+    //                 }
+    //             }
+    //             if(reload){
+    //                     window.location.reload();
+    //             }
+    //         }, 15000);
+    //     }
+
+})();
+
+//Start solve cap ------------------------------------------------------------------------------------------------------------------------------------------
+var id = "";
+let message = document.createElement('span');
+var afterElement = null;
+let pageurl = window.location.href;
+
+function start_solve(){
+    //delete_div();
+    let checkId = setInterval(function() {
+        var frames = document.getElementsByTagName("iframe");
+        for(let i = 0; i < frames.length; i++){
+            var src = frames[i].getAttribute('src');
+            if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+                //frames[i].parentNode.remove();
+                for(let i = 0; i < frames.length; i++){
+                    if(frames[i].offsetParent!=null)
+                    {
+                        let src = frames[i].getAttribute('src');
+                        if(src != null && src.startsWith("https://www.google.com/recaptcha") ){
+                            id = getParameterByName("k", src);
+                            if(id != "" && id != null ){
+                                afterElement = frames[i];
+                                break;
+                            }
+                        }
+                    }
+                }
+                if(id != "" && id != null ){
+
+                    clearInterval(checkId);
+                    setupMessageBox();
+                    makeRequest_captchaguru();
+                }
+                break;
+            }
+        }
+    }, 1000);
+}
+
+function delete_div(){
+    var frames = document.getElementsByTagName("iframe");
+    for(let i = 0; i < frames.length; i++){
+        var src = frames[i].getAttribute('src');
+        if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe")){
+            frames[i].parentNode.remove();
+            break;
+        }
+    }
+}
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+function setupMessageBox() {
+    //let image = '<img src="' + chrome.extension.getURL('./icons/icon.png') + '" align="left" style="margin-right: 4px;" />';
+    message.innerHTML = "<b>Solving captcha...</b>";
+    let container = document.createElement('div');
+    container.className = 'ReCaptcha_solver';
+    //container.innerHTML = image;
+    container.appendChild(message);
+    container.style.backgroundColor = "#F9F9F9";
+    container.style.border = "1px solid #D3D3D3";
+    container.style.borderTop = "none";
+    container.style.borderRadius = "0 0 3px 3px";
+    container.style.padding = "5px";
+    container.style.boxSizing = "border-box"
+    container.style.width = "302px";
+    container.style.margin = "-4px 2px 0 0";
+
+    insertAfter(container, afterElement);
+    // afterElement.appendChild(message);
+}
+function insertAfter(el, referenceNode) {
+    referenceNode.parentNode.insertBefore(el, referenceNode);
+}
+function makeRequest_captchaguru(){
+    sendMessage("<b>Xử Lý Bởi Captcha.Guru ...</b>");
+    let key = "bdbb099957aa3d828658df13ae020c29";
+    let url = 'https://api.captcha.guru/in.php?key='+key+'&googlekey='+id+'&method=userrecaptcha&pageurl='+pageurl+'&vendor_id=3';
+    let request = new XMLHttpRequest();
+    request.open("GET",url, true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if (request.readyState == 4){
+            if(request.responseText.includes('OK|')==false){
+                sendMessage("<b>"+request.responseText+"</b>")
+                setTimeout(start_solve, 2000);
+                //loi cap -- xu ly -------------------------------
+            }else{
+                //////console.log(responseText.substring(3));
+                startWatching_captchaguru(request.responseText.substring(3), key);
+            }
+        }
+    }
+
+
+
+}
+function sendMessage(str){
+    message.innerHTML = str;
+}
+function startWatching_captchaguru(code, key) {
+    let initial = 7000, repeat = 5000;
+    setTimeout(function() {
+        console.log(code);
+        checkCompletion_captchaguru(code, key, repeat);
+    }, initial);
+}
+function checkCompletion_captchaguru(code, key, repeat) {
+    let url = 'https://api.captcha.guru/res.php?key='+key+'&action=get&id='+code+'&json=0';
+    let request = new XMLHttpRequest();
+    request.open("GET",url, true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if (request.readyState == 4){
+            console.log(request.responseText);
+            if(request.responseText.includes("CAPCHA_NOT_READY")){
+                setTimeout(function() {
+                    checkCompletion_captchaguru(code, key, repeat);
+                }, repeat)
+            }else{
+                setCaptchaCode(request.responseText.substring(3));
+            }
+
+        }
+    }
+
+}
+function setCaptchaCode(code) {
+    let ele = document.getElementsByClassName("g-recaptcha-response")[0];
+    console.log(ele);
+    console.log(code);
+    sendMessage("<b>XONG</b>");
+    //setChecked();
+
+    if(ele != null){
+        ele.innerHTML = code;
+        bitir(code);
+        setTimeout(start_solve, 10000);
+
+    }
+}
+function bitir(code)
+{
+    var taskSolution=code;
+    var injectedCode = "(" + function(taskSolution) {
+        var recaptchaCallbackAlreadyFired = false;
+
+        var recursiveCallbackSearch = function(object, solution, currentDepth, maxDepth) {
+            if (recaptchaCallbackAlreadyFired) {
+                return
+            }
+            var passedProperties = 0;
+            for (var i in object) {
+                passedProperties++;
+                if (passedProperties > 15) {
+                    break
+                }
+                try {
+                    if (typeof object[i] == "object" && currentDepth <= maxDepth) {
+                        recursiveCallbackSearch(object[i], solution, currentDepth + 1, maxDepth)
+                    } else if (i == "callback") {
+                        if (typeof object[i] == "function") {
+                            recaptchaCallbackAlreadyFired = true;
+                            object[i](solution)
+                        } else if (typeof object[i] == "string" && typeof window[object[i]] == "function") {
+                            recaptchaCallbackAlreadyFired = true;
+                            window[object[i]](solution)
+                        }
+                        return
+                    }
+                } catch (e) {}
+            }
+        };
+
+        if (!recaptchaCallbackAlreadyFired) {
+            if (typeof ___grecaptcha_cfg != "undefined" && typeof ___grecaptcha_cfg.clients != "undefined") {
+                var oneVisibleRecaptchaClientKey = null;
+                visible_recaptcha_element_search_loop: for (var i in ___grecaptcha_cfg.clients) {
+                    for (var j in ___grecaptcha_cfg.clients[i]) {
+                        if (___grecaptcha_cfg.clients[i][j] && typeof ___grecaptcha_cfg.clients[i][j].nodeName == "string" && typeof ___grecaptcha_cfg.clients[i][j].innerHTML == "string" && typeof ___grecaptcha_cfg.clients[i][j].innerHTML.indexOf("iframe") != -1) {
+                            if (___grecaptcha_cfg.clients[i][j].offsetHeight != 0 || ___grecaptcha_cfg.clients[i][j].childNodes.length && ___grecaptcha_cfg.clients[i][j].childNodes[0].offsetHeight != 0 || ___grecaptcha_cfg.clients[i][j].dataset.size == "invisible") {
+                                if (oneVisibleRecaptchaClientKey === null) {
+                                    oneVisibleRecaptchaClientKey = i;
+                                    break
+                                } else {
+                                    oneVisibleRecaptchaClientKey = null;
+                                    break visible_recaptcha_element_search_loop
+                                }
+                            }
+                        }
+                    }
+                }
+                if (oneVisibleRecaptchaClientKey !== null) {
+                    recursiveCallbackSearch(___grecaptcha_cfg.clients[oneVisibleRecaptchaClientKey], taskSolution, 1, 2)
+                }
+            }
+        }
+    } + ')("' + taskSolution + '");';
+    var script = document.createElement("script");
+    script.textContent = injectedCode;
+    //console.log(injectedCode);
+    (document.head || document.documentElement).appendChild(script);
+    script.remove();
+}
+//End solve cap ------------------------------------------------------------------------------------------------------------------------------------------
