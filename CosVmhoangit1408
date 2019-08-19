@@ -62,9 +62,9 @@ function InitializeFirebase() {
 
     else if (window.location.href=="https://cos.tv/home/dist/treasure.html#/") {
         start_solve();
-        setTimeout(function() {
-            window.location.href="https://cos.tv/popcorn/";
-        }, 140000);
+        //         setTimeout(function() {
+        //             window.location.href="https://cos.tv/popcorn/";
+        //         }, 140000);
         setTimeout(function() {
             var frames = document.getElementsByTagName("iframe");
             var reload=true;
@@ -88,7 +88,7 @@ function InitializeFirebase() {
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
-                    window.location.href="https://cos.tv/popcorn/";
+                    window.location.href="about:blank";
                 }
             } catch(e){}
         }, 5000);
@@ -96,7 +96,7 @@ function InitializeFirebase() {
     }
 
     else if (window.location.href=="https://cos.tv/popcorn/") {
-        start_solve();
+        //start_solve();
         setTimeout(function() {
             setInterval(function() {
                 console.log(document.getElementsByClassName("btn")[0]);
@@ -195,6 +195,9 @@ var afterElement = null;
 let pageurl = window.location.href;
 
 function start_solve(){
+    setInterval(function(){
+        window.alert=function(){};
+    },10000);
     //delete_div();
     let checkId = setInterval(function() {
         var frames = document.getElementsByTagName("iframe");
