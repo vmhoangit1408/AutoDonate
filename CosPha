@@ -1,17 +1,14 @@
-console.log("update: 31.07.2019");
-
 
 var database;
 function InitializeFirebase() {
-    // Your web app's Firebase configuration
     var firebaseConfig = {
-        apiKey: "AIzaSyDfiVTVHfRQ08utJLP59yztce7OtaSfpMc",
-        authDomain: "cos-data.firebaseapp.com",
-        databaseURL: "https://cos-data.firebaseio.com",
-        projectId: "cos-data",
+        apiKey: "AIzaSyB_C1FVm09Vtolp_EO8uX2qKoqMT2pU4z8",
+        authDomain: "cos-data-pha.firebaseapp.com",
+        databaseURL: "https://cos-data-pha.firebaseio.com",
+        projectId: "cos-data-pha",
         storageBucket: "",
-        messagingSenderId: "696388713273",
-        appId: "1:696388713273:web:cc21ef8ee3409c11"
+        messagingSenderId: "319695774803",
+        appId: "1:319695774803:web:041cab14b24e1603"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
