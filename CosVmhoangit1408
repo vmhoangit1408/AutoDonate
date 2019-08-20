@@ -131,7 +131,7 @@ function InitializeFirebase() {
                 window.location.href="https://cos.tv/popcorn/";
             }
 
-        }, 2000);
+        }, 5000);
     }
 
     else if (window.location.href=="https://cos.tv/property/") {
