@@ -1,5 +1,13 @@
-console.log("update cos: 17.8.2019");
-
+console.log("update cos: 20.8.2019");
+// ==UserScript==
+// @name         Cos
+// @version      09.08.2019
+// @description  Auto cos
+// @author       vmhoangit1408
+// @match        https://cos.tv/*
+// @require 	 https://www.gstatic.com/firebasejs/5.9.4/firebase.js
+// @grant        none
+// ==/UserScript==
 var database;
 function InitializeFirebase() {
     // Your web app's Firebase configuration
@@ -98,25 +106,38 @@ function InitializeFirebase() {
     else if (window.location.href=="https://cos.tv/popcorn/") {
         //start_solve();
         setTimeout(function() {
-            setInterval(function() {
-                console.log(document.getElementsByClassName("btn")[0]);
-                if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
-
-                    try{
-                        document.getElementsByClassName("btn")[0].click();
-                    } catch(e){
-                        try{
-                            document.getElementsByClassName("btn-start")[0].click();
-                        } catch(e){}
+            var checkLogin=window.document.getElementsByClassName("header-link user-name not-login")[0];
+            if(checkLogin != null){
+                var timeCheck=setInterval(function() {
+                    var today = new Date();
+                    var timeCur=today.getMinutes();
+                    console.log(timeCur);
+                    if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
+                        clearInterval(timeCheck);
+                        setInterval(function() {
+                            console.log(document.getElementsByClassName("btn")[0]);
+                            if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
+                                try{
+                                    document.getElementsByClassName("btn")[0].click();
+                                } catch(e){
+                                    try{
+                                        document.getElementsByClassName("btn-start")[0].click();
+                                    } catch(e){}
+                                }
+                            }
+                            else{
+                                setTimeout(function() {
+                                    window.location.href="https://cos.tv/property/";
+                                }, 1000);
+                            }
+                        }, 3000);
                     }
+                }, 3000);
+            }
+            else{
+                window.location.href="https://cos.tv/popcorn/";
+            }
 
-                }
-                else{
-                    setTimeout(function() {
-                        window.location.href="https://cos.tv/property/";
-                    }, 1000);
-                }
-            }, 3000);
         }, 2000);
     }
 
@@ -146,11 +167,12 @@ function InitializeFirebase() {
             }
         }, 5000);
     }
-    //     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/phone")) {
-    //         setTimeout(function() {
-    //             window.location.href=window.location.href.replace('phone','email');
-    //         }, 1000);
-    //     }
+    else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login")) {
+        //              setTimeout(function() {
+        //                  window.location.href=window.location.href.replace('phone','email');
+        //              }, 1000);
+        start_solve();
+    }
     //     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/email")) {
     //         start_solve();
     //         console.log("11111");
