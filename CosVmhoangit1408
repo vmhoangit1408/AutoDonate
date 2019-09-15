@@ -81,11 +81,7 @@ function InitializeFirebase() {
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
-                    //window.location.href="about:blank";
-                    setTimeout(function() {
-                        window.open('','_parent','');
-                        window.close();
-                    }, 2000);
+                    window.location.href="about:blank";
                 }
             } catch(e){}
         }, 5000);
@@ -146,6 +142,9 @@ function InitializeFirebase() {
             }
 
         }, 5000);
+    }
+    else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/email")) {
+        start_solve();
     }
 
 })();
