@@ -78,7 +78,8 @@ function InitializeFirebase() {
                 else{
                     InitializeFirebase();
                     database = firebase.database();
-                    var key=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'').split("@")[0];
+                    var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+                    var key=checkLogin.split("@")[0];
                     var today = new Date();
                     var dd = String(today.getDate()).padStart(2, '0');
                     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -86,6 +87,7 @@ function InitializeFirebase() {
                     today = dd + '-' + mm + '-' + yyyy;
                     var pop=window.document.getElementsByClassName("ava-out pop")[0].innerText;
                     database.ref('/'+today+'/'+key).set({
+                        name: checkLogin,
                         pop: pop
                     });
                     setTimeout(function() {
