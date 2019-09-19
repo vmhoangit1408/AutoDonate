@@ -75,7 +75,7 @@ function InitializeFirebase() {
         setInterval(function() {
             try{
                 console.log(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML);
-                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Mở rương báu (miễn phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Open a treasure box(for free)"){
+                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="M? ruong báu (mi?n phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Open a treasure box(for free)"){
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
@@ -237,7 +237,7 @@ function insertAfter(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode);
 }
 function makeRequest_captchaguru(){
-    sendMessage("<b>Xử Lý Bởi Captcha.Guru ...</b>");
+    sendMessage("<b>X? Lý B?i Captcha.Guru ...</b>");
     let key = "bdbb099957aa3d828658df13ae020c29";
     let url = 'https://api.captcha.guru/in.php?key='+key+'&googlekey='+id+'&method=userrecaptcha&pageurl='+pageurl+'&vendor_id=3';
     let request = new XMLHttpRequest();
