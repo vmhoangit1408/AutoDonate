@@ -1,0 +1,362 @@
+
+var database;
+function InitializeFirebase() {
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCagRQ-QZHZGxwR3oo-BOKXjCZm10ww-Rk",
+        authDomain: "cos-main.firebaseapp.com",
+        databaseURL: "https://cos-main.firebaseio.com",
+        projectId: "cos-main",
+        storageBucket: "",
+        messagingSenderId: "522305822487",
+        appId: "1:522305822487:web:6b82e333eb310290776152"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+}
+
+(function() {
+    if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
+        start_solve();
+        setTimeout(function() {
+            var frames = document.getElementsByTagName("iframe");
+            var reload=true;
+            for(let i = 0; i < frames.length; i++){
+                var src = frames[i].getAttribute('src');
+                if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+                    reload=false;
+                    break;
+                }
+            }
+            if(reload){
+                if(document.getElementsByClassName("clickSignInRed")[0]!=null){
+                    window.location.reload();
+                }
+                else{
+                    window.location.href="https://cos.tv/home/dist/treasure.html#/";
+                }
+            }
+        }, 15000);
+
+        setInterval(function() {
+            try{
+                document.getElementsByClassName("clickSignInRed")[0].click();
+            } catch(e){}
+            try{
+                document.getElementsByClassName("btn btn-confirm")[0].click();
+            } catch(e){}
+            try{
+                document.getElementsByClassName("btn-more-cos")[0].click();
+            } catch(e){}
+        }, 3000);
+    }
+
+    else if (window.location.href=="https://cos.tv/home/dist/treasure.html#/") {
+        start_solve();
+        setTimeout(function() {
+            var frames = document.getElementsByTagName("iframe");
+            var reload=true;
+            for(let i = 0; i < frames.length; i++){
+                var src = frames[i].getAttribute('src');
+                if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+                    reload=false;
+                    break;
+                }
+            }
+            if(reload){
+                window.location.reload();
+            }
+
+        }, 15000);
+
+        setInterval(function() {
+            try{
+                console.log(document.getElementsByClassName("inadequate fix-font-style")[0].innerText);
+                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerText=="Mở rương báu (miễn phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerText=="Open a treasure box(for free)"){
+                    document.getElementsByClassName("inadequate fix-font-style")[0].click();
+                }
+                else{
+                    setTimeout(function() {
+                        window.location.href="about:blank";
+                    }, 5000);
+                }
+            } catch(e){}
+        }, 5000);
+
+    }
+
+    else if (window.location.href=="https://cos.tv/popcorn/") {
+        setTimeout(function() {
+            var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+            if(checkLogin != null){
+                var timeCheck=setInterval(function() {
+                    var today = new Date();
+                    var timeCur=today.getMinutes();
+                    console.log(timeCur);
+                    if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
+                        var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
+                        clearInterval(timeCheck);
+                        var timeRoll=setInterval(function() {
+                            if(parseInt(timeCur)<=5){
+                                if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
+                                    try{
+                                        document.getElementsByClassName("btn")[0].click();
+                                    } catch(e){
+                                        try{
+                                            document.getElementsByClassName("btn-start")[0].click();
+                                        } catch(e){}
+                                    }
+                                }
+                                else{
+                                    clearInterval(timeRoll);
+                                    InitializeFirebase();
+                                    database = firebase.database();
+                                    var key=checkLogin.split("@")[0];
+                                    var cos = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
+                                    var today = new Date();
+                                    var dd = String(today.getDate()).padStart(2, '0');
+                                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                    var yyyy = today.getFullYear();
+
+                                    today = dd + '-' + mm + '-' + yyyy;
+
+                                    database.ref('/'+today+'/'+key).set({
+                                        name: checkLogin,
+                                        cos: cos,
+                                        cosLast: cosLast
+                                    });
+                                    setTimeout(function() {
+                                        window.location.href="about:blank";
+                                    }, 5000);
+                                }
+                            }
+                        }, 3000);
+                    }
+                }, 3000);
+            }
+            else{
+                window.location.href="https://cos.tv/popcorn/";
+            }
+
+        }, 5000);
+    }
+    else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
+        start_solve();
+    }
+
+})();
+
+//Start solve cap ------------------------------------------------------------------------------------------------------------------------------------------
+var id = "";
+let message = document.createElement('span');
+var afterElement = null;
+let pageurl = window.location.href;
+
+function start_solve(){
+    setInterval(function(){
+        window.alert=function(){};
+    },10000);
+    //delete_div();
+    let checkId = setInterval(function() {
+        var frames = document.getElementsByTagName("iframe");
+        for(let i = 0; i < frames.length; i++){
+            var src = frames[i].getAttribute('src');
+            if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe") && frames[i].parentNode.parentNode.style.visibility != "hidden"){
+                //frames[i].parentNode.remove();
+                for(let i = 0; i < frames.length; i++){
+                    if(frames[i].offsetParent!=null)
+                    {
+                        let src = frames[i].getAttribute('src');
+                        if(src != null && src.startsWith("https://www.google.com/recaptcha") ){
+                            id = getParameterByName("k", src);
+                            if(id != "" && id != null ){
+                                afterElement = frames[i];
+                                break;
+                            }
+                        }
+                    }
+                }
+                if(id != "" && id != null ){
+
+                    clearInterval(checkId);
+                    setupMessageBox();
+                    makeRequest_captchaguru();
+                }
+                break;
+            }
+        }
+    }, 1000);
+}
+
+function delete_div(){
+    var frames = document.getElementsByTagName("iframe");
+    for(let i = 0; i < frames.length; i++){
+        var src = frames[i].getAttribute('src');
+        if(src != null && src.startsWith("https://www.google.com/recaptcha/api2/bframe")){
+            frames[i].parentNode.remove();
+            break;
+        }
+    }
+}
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+function setupMessageBox() {
+    //let image = '<img src="' + chrome.extension.getURL('./icons/icon.png') + '" align="left" style="margin-right: 4px;" />';
+    message.innerHTML = "<b>Solving captcha...</b>";
+    let container = document.createElement('div');
+    container.className = 'ReCaptcha_solver';
+    //container.innerHTML = image;
+    container.appendChild(message);
+    container.style.backgroundColor = "#F9F9F9";
+    container.style.border = "1px solid #D3D3D3";
+    container.style.borderTop = "none";
+    container.style.borderRadius = "0 0 3px 3px";
+    container.style.padding = "5px";
+    container.style.boxSizing = "border-box"
+    container.style.width = "302px";
+    container.style.margin = "-4px 2px 0 0";
+
+    insertAfter(container, afterElement);
+    // afterElement.appendChild(message);
+}
+function insertAfter(el, referenceNode) {
+    referenceNode.parentNode.insertBefore(el, referenceNode);
+}
+function makeRequest_captchaguru(){
+    sendMessage("<b>Xử Lý Bởi Captcha.Guru ...</b>");
+    let key = "0bb3580ec71ce9d43587c94a6e8b5b30";
+    let url = 'https://api.captcha.guru/in.php?key='+key+'&googlekey='+id+'&method=userrecaptcha&pageurl='+pageurl+'&vendor_id=3';
+    let request = new XMLHttpRequest();
+    request.open("GET",url, true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if (request.readyState == 4){
+            if(request.responseText.includes('OK|')==false){
+                sendMessage("<b>"+request.responseText+"</b>")
+                setTimeout(start_solve, 2000);
+                //loi cap -- xu ly -------------------------------
+            }else{
+                //////console.log(responseText.substring(3));
+                startWatching_captchaguru(request.responseText.substring(3), key);
+            }
+        }
+    }
+
+
+
+}
+function sendMessage(str){
+    message.innerHTML = str;
+}
+function startWatching_captchaguru(code, key) {
+    let initial = 7000, repeat = 5000;
+    setTimeout(function() {
+        console.log(code);
+        checkCompletion_captchaguru(code, key, repeat);
+    }, initial);
+}
+function checkCompletion_captchaguru(code, key, repeat) {
+    let url = 'https://api.captcha.guru/res.php?key='+key+'&action=get&id='+code+'&json=0';
+    let request = new XMLHttpRequest();
+    request.open("GET",url, true);
+    request.send(null);
+    request.onreadystatechange = function() {
+        if (request.readyState == 4){
+            console.log(request.responseText);
+            if(request.responseText.includes("CAPCHA_NOT_READY")){
+                setTimeout(function() {
+                    checkCompletion_captchaguru(code, key, repeat);
+                }, repeat)
+            }else{
+                setCaptchaCode(request.responseText.substring(3));
+            }
+
+        }
+    }
+
+}
+function setCaptchaCode(code) {
+    let ele = document.getElementsByClassName("g-recaptcha-response")[0];
+    console.log(ele);
+    console.log(code);
+    sendMessage("<b>XONG</b>");
+    //setChecked();
+
+    if(ele != null){
+        ele.innerHTML = code;
+        bitir(code);
+        setTimeout(start_solve, 10000);
+
+    }
+}
+function bitir(code)
+{
+    var taskSolution=code;
+    var injectedCode = "(" + function(taskSolution) {
+        var recaptchaCallbackAlreadyFired = false;
+
+        var recursiveCallbackSearch = function(object, solution, currentDepth, maxDepth) {
+            if (recaptchaCallbackAlreadyFired) {
+                return
+            }
+            var passedProperties = 0;
+            for (var i in object) {
+                passedProperties++;
+                if (passedProperties > 15) {
+                    break
+                }
+                try {
+                    if (typeof object[i] == "object" && currentDepth <= maxDepth) {
+                        recursiveCallbackSearch(object[i], solution, currentDepth + 1, maxDepth)
+                    } else if (i == "callback") {
+                        if (typeof object[i] == "function") {
+                            recaptchaCallbackAlreadyFired = true;
+                            object[i](solution)
+                        } else if (typeof object[i] == "string" && typeof window[object[i]] == "function") {
+                            recaptchaCallbackAlreadyFired = true;
+                            window[object[i]](solution)
+                        }
+                        return
+                    }
+                } catch (e) {}
+            }
+        };
+
+        if (!recaptchaCallbackAlreadyFired) {
+            if (typeof ___grecaptcha_cfg != "undefined" && typeof ___grecaptcha_cfg.clients != "undefined") {
+                var oneVisibleRecaptchaClientKey = null;
+                visible_recaptcha_element_search_loop: for (var i in ___grecaptcha_cfg.clients) {
+                    for (var j in ___grecaptcha_cfg.clients[i]) {
+                        if (___grecaptcha_cfg.clients[i][j] && typeof ___grecaptcha_cfg.clients[i][j].nodeName == "string" && typeof ___grecaptcha_cfg.clients[i][j].innerHTML == "string" && typeof ___grecaptcha_cfg.clients[i][j].innerHTML.indexOf("iframe") != -1) {
+                            if (___grecaptcha_cfg.clients[i][j].offsetHeight != 0 || ___grecaptcha_cfg.clients[i][j].childNodes.length && ___grecaptcha_cfg.clients[i][j].childNodes[0].offsetHeight != 0 || ___grecaptcha_cfg.clients[i][j].dataset.size == "invisible") {
+                                if (oneVisibleRecaptchaClientKey === null) {
+                                    oneVisibleRecaptchaClientKey = i;
+                                    break
+                                } else {
+                                    oneVisibleRecaptchaClientKey = null;
+                                    break visible_recaptcha_element_search_loop
+                                }
+                            }
+                        }
+                    }
+                }
+                if (oneVisibleRecaptchaClientKey !== null) {
+                    recursiveCallbackSearch(___grecaptcha_cfg.clients[oneVisibleRecaptchaClientKey], taskSolution, 1, 2)
+                }
+            }
+        }
+    } + ')("' + taskSolution + '");';
+    var script = document.createElement("script");
+    script.textContent = injectedCode;
+    //console.log(injectedCode);
+    (document.head || document.documentElement).appendChild(script);
+    script.remove();
+}
+//End solve cap ------------------------------------------------------------------------------------------------------------------------------------------
