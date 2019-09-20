@@ -75,7 +75,7 @@ function InitializeFirebase() {
         setInterval(function() {
             try{
                 console.log(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML);
-                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="M? ruong báu (mi?n phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Open a treasure box(for free)"){
+                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Mở rương báu (miễn phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Open a treasure box(for free)"){
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
