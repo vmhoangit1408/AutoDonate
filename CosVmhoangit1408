@@ -14,6 +14,20 @@ function InitializeFirebase() {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 }
+function InitializeFirebase1() {
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAQnDRq2K0RbojcUTsOt603CKqENwoMNRY",
+        authDomain: "pop-data-43e59.firebaseapp.com",
+        databaseURL: "https://pop-data-43e59.firebaseio.com",
+        projectId: "pop-data-43e59",
+        storageBucket: "",
+        messagingSenderId: "1028760502001",
+        appId: "1:1028760502001:web:86fbc21897e84ed7f8f350"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+}
 
 (function() {
     if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
@@ -76,7 +90,7 @@ function InitializeFirebase() {
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
-                    InitializeFirebase();
+                    InitializeFirebase1();
                     database = firebase.database();
                     var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
                     var key=checkLogin.split("@")[0];
