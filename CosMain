@@ -87,7 +87,7 @@ function InitializeFirebase() {
 
     else if (window.location.href=="https://cos.tv/popcorn/") {
         setTimeout(function() {
-            var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+            var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
             if(checkLogin != null){
                 var timeCheck=setInterval(function() {
                     var today = new Date();
