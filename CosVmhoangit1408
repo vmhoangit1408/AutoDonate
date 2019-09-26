@@ -1,5 +1,4 @@
 
-var database;
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -28,6 +27,8 @@ function InitializeFirebase1() {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 }
+var keyCap="0bb3580ec71ce9d43587c94a6e8b5b30";
+var database;
 
 (function() {
     if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
@@ -259,7 +260,7 @@ function insertAfter(el, referenceNode) {
 }
 function makeRequest_captchaguru(){
     sendMessage("<b>Xử Lý Bởi Captcha.Guru ...</b>");
-    let key = "0bb3580ec71ce9d43587c94a6e8b5b30";
+    let key = keyCap;
     let url = 'https://api.captcha.guru/in.php?key='+key+'&googlekey='+id+'&method=userrecaptcha&pageurl='+pageurl+'&vendor_id=3';
     let request = new XMLHttpRequest();
     request.open("GET",url, true);
