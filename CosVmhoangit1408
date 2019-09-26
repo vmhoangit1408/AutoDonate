@@ -1,4 +1,5 @@
 
+
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -171,6 +172,17 @@ var database;
     }
     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
+    }
+    else if (window.location.href.includes("https://cos.tv/account/chain/bind/create")) {
+        setTimeout(function() {
+            document.getElementsByClassName("cos-btn-primary btn-submit")[0].click();
+            setTimeout(function() {
+                document.getElementsByClassName("input-radio")[0].click();
+                setTimeout(function() {
+                    document.getElementsByClassName("btn-confirm")[0].click();
+                }, 3000);
+            }, 3000);
+        }, 5000);
     }
 
 })();
