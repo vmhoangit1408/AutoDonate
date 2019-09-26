@@ -187,6 +187,12 @@ var database;
             }, 3000);
         }, 5000);
     }
+    else if (window.location.href.includes("https://cos.tv/account/chain/bind/success")) {
+
+        setTimeout(function() {
+            window.location.href="https://cos.tv/subject/home/dist/daily.html#/";
+        }, 3000);
+    }
 
 })();
 
