@@ -92,7 +92,7 @@ function InitializeFirebase1() {
                 else{
                     InitializeFirebase1();
                     database = firebase.database();
-                    var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+                    var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
                     var key=checkLogin.split("@")[0];
                     var today = new Date();
                     var dd = String(today.getDate()).padStart(2, '0');
@@ -115,7 +115,7 @@ function InitializeFirebase1() {
 
     else if (window.location.href=="https://cos.tv/popcorn/") {
         setTimeout(function() {
-            var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+            var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
             if(checkLogin != null){
                 var timeCheck=setInterval(function() {
                     var today = new Date();
