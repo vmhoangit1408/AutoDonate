@@ -107,7 +107,11 @@ var database;
                         pop: pop
                     });
                     setTimeout(function() {
-                        window.location.href="about:blank";
+                        //window.location.href="about:blank";
+                        setTimeout(function() {
+                            window.open('','_parent','');
+                            window.close();
+                        }, 2000);
                     }, 5000);
                 }
             } catch(e){}
@@ -156,7 +160,11 @@ var database;
                                         cosLast: cosLast
                                     });
                                     setTimeout(function() {
-                                        window.location.href="about:blank";
+                                        //window.location.href="about:blank";
+                                        setTimeout(function() {
+                                            window.open('','_parent','');
+                                            window.close();
+                                        }, 2000);
                                     }, 5000);
                                 }
                             }
