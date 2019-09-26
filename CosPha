@@ -1,4 +1,5 @@
 
+
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -279,7 +280,7 @@ function insertAfter(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode);
 }
 function makeRequest_captchaguru(){
-    sendMessage("<b>Xử Lý Bởi Captcha.Guru ...</b>");
+    sendMessage("<b>X? Lý B?i Captcha.Guru ...</b>");
     let key = keyCap;
     let url = 'https://api.captcha.guru/in.php?key='+key+'&googlekey='+id+'&method=userrecaptcha&pageurl='+pageurl+'&vendor_id=3';
     let request = new XMLHttpRequest();
