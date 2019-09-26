@@ -1,5 +1,7 @@
-var database;
+
+
 function InitializeFirebase() {
+    // Your web app's Firebase configuration
     var firebaseConfig = {
         apiKey: "AIzaSyB_C1FVm09Vtolp_EO8uX2qKoqMT2pU4z8",
         authDomain: "cos-data-pha.firebaseapp.com",
@@ -12,7 +14,22 @@ function InitializeFirebase() {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 }
-
+function InitializeFirebase1() {
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCbui36q1RzrCCBTYD5_ekfEG79Y8fBThQ",
+        authDomain: "pop-data-pha.firebaseapp.com",
+        databaseURL: "https://pop-data-pha.firebaseio.com",
+        projectId: "pop-data-pha",
+        storageBucket: "",
+        messagingSenderId: "674195748123",
+        appId: "1:674195748123:web:9685e4fab72db4cad50fbe"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+}
+var keyCap="bdbb099957aa3d828658df13ae020c29";
+var database;
 (function() {
     if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
         start_solve();
@@ -39,15 +56,10 @@ function InitializeFirebase() {
         setInterval(function() {
             try{
                 document.getElementsByClassName("clickSignInRed")[0].click();
-
             } catch(e){}
-        }, 3000);
-        setInterval(function() {
             try{
                 document.getElementsByClassName("btn btn-confirm")[0].click();
             } catch(e){}
-        }, 3000);
-        setInterval(function() {
             try{
                 document.getElementsByClassName("btn-more-cos")[0].click();
             } catch(e){}
@@ -74,12 +86,28 @@ function InitializeFirebase() {
 
         setInterval(function() {
             try{
-                console.log(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML);
-                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Mở rương báu (miễn phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerHTML=="Open a treasure box(for free)"){
+                console.log(document.getElementsByClassName("inadequate fix-font-style")[0].innerText);
+                if(document.getElementsByClassName("inadequate fix-font-style")[0].innerText=="Mở rương báu (miễn phí)" || document.getElementsByClassName("inadequate fix-font-style")[0].innerText=="Open a treasure box(for free)"){
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
-                    window.location.href="about:blank";
+                    InitializeFirebase1();
+                    database = firebase.database();
+                    var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
+                    var key=checkLogin.split("@")[0];
+                    var today = new Date();
+                    var dd = String(today.getDate()).padStart(2, '0');
+                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                    var yyyy = today.getFullYear();
+                    today = dd + '-' + mm + '-' + yyyy;
+                    var pop=window.document.getElementsByClassName("ava-out pop")[0].innerText;
+                    database.ref('/'+today+'/'+key).set({
+                        name: checkLogin,
+                        pop: pop
+                    });
+                    setTimeout(function() {
+                        window.location.href="about:blank";
+                    }, 5000);
                 }
             } catch(e){}
         }, 5000);
@@ -88,48 +116,48 @@ function InitializeFirebase() {
 
     else if (window.location.href=="https://cos.tv/popcorn/") {
         setTimeout(function() {
-            var checkLogin=window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+            var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
             if(checkLogin != null){
                 var timeCheck=setInterval(function() {
                     var today = new Date();
                     var timeCur=today.getMinutes();
                     console.log(timeCur);
                     if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
+                        var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
                         clearInterval(timeCheck);
                         var timeRoll=setInterval(function() {
-                            console.log(document.getElementsByClassName("btn")[0]);
-                            if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
-                                try{
-                                    document.getElementsByClassName("btn")[0].click();
-                                } catch(e){
+                            if(parseInt(timeCur)<=5){
+                                if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
                                     try{
-                                        document.getElementsByClassName("btn-start")[0].click();
-                                    } catch(e){}
+                                        document.getElementsByClassName("btn")[0].click();
+                                    } catch(e){
+                                        try{
+                                            document.getElementsByClassName("btn-start")[0].click();
+                                        } catch(e){}
+                                    }
                                 }
-                            }
-                            else{
-                                clearInterval(timeRoll);
-                                InitializeFirebase();
-                                database = firebase.database();
-                                var key=checkLogin.split("@")[0];
-                                var cos = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
-                                var today = new Date();
-                                var dd = String(today.getDate()).padStart(2, '0');
-                                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-                                var yyyy = today.getFullYear();
+                                else{
+                                    clearInterval(timeRoll);
+                                    InitializeFirebase();
+                                    database = firebase.database();
+                                    var key=checkLogin.split("@")[0];
+                                    var cos = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
+                                    var today = new Date();
+                                    var dd = String(today.getDate()).padStart(2, '0');
+                                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                    var yyyy = today.getFullYear();
 
-                                today = dd + '-' + mm + '-' + yyyy;
-                                console.log(cos);
-                                console.log(checkLogin);
-                                console.log(today);
+                                    today = dd + '-' + mm + '-' + yyyy;
 
-                                database.ref('/'+today+'/'+key).set({
-                                    name: checkLogin,
-                                    cos: cos
-                                });
-                                setTimeout(function() {
-                                    window.location.href="about:blank";
-                                }, 5000);
+                                    database.ref('/'+today+'/'+key).set({
+                                        name: checkLogin,
+                                        cos: cos,
+                                        cosLast: cosLast
+                                    });
+                                    setTimeout(function() {
+                                        window.location.href="about:blank";
+                                    }, 5000);
+                                }
                             }
                         }, 3000);
                     }
@@ -141,13 +169,7 @@ function InitializeFirebase() {
 
         }, 5000);
     }
-
-    else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/phone")) {
-        setTimeout(function() {
-            window.location.href=window.location.href.replace('phone','email');
-        }, 1000);
-    }
-    else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html#/login/email")) {
+    else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
     }
 
@@ -237,8 +259,8 @@ function insertAfter(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode);
 }
 function makeRequest_captchaguru(){
-    sendMessage("<b>X? Lý B?i Captcha.Guru ...</b>");
-    let key = "bdbb099957aa3d828658df13ae020c29";
+    sendMessage("<b>Xử Lý Bởi Captcha.Guru ...</b>");
+    let key = keyCap;
     let url = 'https://api.captcha.guru/in.php?key='+key+'&googlekey='+id+'&method=userrecaptcha&pageurl='+pageurl+'&vendor_id=3';
     let request = new XMLHttpRequest();
     request.open("GET",url, true);
