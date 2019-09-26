@@ -185,7 +185,7 @@ var database;
         setTimeout(function() {
             document.getElementsByClassName("cos-btn-primary btn-submit")[0].click();
             setTimeout(function() {
-                document.getElementsByClassName("input-radio")[0].click();
+                document.getElementsByClassName("input-radio")[2].click();
                 setTimeout(function() {
                     document.getElementsByClassName("btn-confirm")[0].click();
                 }, 3000);
