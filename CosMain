@@ -93,11 +93,11 @@ function InitializeFirebase() {
                     var today = new Date();
                     var timeCur=today.getMinutes();
                     console.log(timeCur);
-                    //if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
+                    if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
                     var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
                     clearInterval(timeCheck);
                     var timeRoll=setInterval(function() {
-                        //if(parseInt(timeCur)<=5){
+                        if(parseInt(timeCur)<=5){
                         if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
                             try{
                                 document.getElementsByClassName("btn")[0].click();
@@ -123,16 +123,15 @@ function InitializeFirebase() {
                             database.ref('/'+today+'/'+key).set({
                                 name: checkLogin,
                                 cos: cos,
-                                cosLast: cosLast,
-                                time: timeCur
+                                cosLast: cosLast
                             });
                             setTimeout(function() {
                                 window.location.href="about:blank";
                             }, 5000);
                         }
-                        //}
+                        }
                     }, 3000);
-                    //}
+                    }
                 }, 3000);
             }
             else{
