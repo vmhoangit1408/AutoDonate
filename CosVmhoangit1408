@@ -183,15 +183,20 @@ var database;
                     setTimeout(function() {
                         window.location.href="https://cos.tv/subject/home/dist/daily.html#/";
                     }, 3000);
-                }, 3000);
-            }, 3000);
-        }, 5000);
+                }, 5000);
+            }, 5000);
+        }, 10000);
     }
     else if (window.location.href.includes("https://cos.tv/account/chain/bind/success")) {
-
         setTimeout(function() {
             window.location.href="https://cos.tv/subject/home/dist/daily.html#/";
         }, 3000);
+    }
+    else if (window.location.href.includes("https://cos.tv/videos/play/")) {
+        setTimeout(function() {
+            var checkLK=document.getElementsByClassName("high-bg")[0];
+            console.log(checkLK);
+        }, 5000);
     }
 
 })();
