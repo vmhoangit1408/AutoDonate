@@ -1,4 +1,5 @@
 
+
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -106,8 +107,8 @@ var database;
                         pop: pop
                     });
                     setTimeout(function() {
-                        //window.location.href="about:blank";
-                        window.location.href="https://cos.tv/videos/play/1569455142494425415";
+                        window.location.href="about:blank";
+                        //window.location.href="https://cos.tv/videos/play/1569455142494425415";
                     }, 5000);
                 }
             } catch(e){}
