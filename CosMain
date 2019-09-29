@@ -94,43 +94,43 @@ function InitializeFirebase() {
                     var timeCur=today.getMinutes();
                     console.log(timeCur);
                     if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
-                    var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
-                    clearInterval(timeCheck);
-                    var timeRoll=setInterval(function() {
-                        if(parseInt(timeCur)<=5){
-                        if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
-                            try{
-                                document.getElementsByClassName("btn")[0].click();
-                            } catch(e){
-                                try{
-                                    document.getElementsByClassName("btn-start")[0].click();
-                                } catch(e){}
+                        var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
+                        clearInterval(timeCheck);
+                        var timeRoll=setInterval(function() {
+                            if(parseInt(timeCur)<=5){
+                                if(parseInt(window.document.getElementsByClassName("property-val pop-property")[0].innerHTML) >=100){
+                                    try{
+                                        document.getElementsByClassName("btn")[0].click();
+                                    } catch(e){
+                                        try{
+                                            document.getElementsByClassName("btn-start")[0].click();
+                                        } catch(e){}
+                                    }
+                                }
+                                else{
+                                    clearInterval(timeRoll);
+                                    InitializeFirebase();
+                                    database = firebase.database();
+                                    var key=checkLogin.split("@")[0];
+                                    var cos = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
+                                    var today = new Date();
+                                    var dd = String(today.getDate()).padStart(2, '0');
+                                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                    var yyyy = today.getFullYear();
+
+                                    today = dd + '-' + mm + '-' + yyyy;
+
+                                    database.ref('/'+today+'/'+key).set({
+                                        name: checkLogin,
+                                        cos: cos,
+                                        cosLast: cosLast
+                                    });
+                                    setTimeout(function() {
+                                        window.location.href="about:blank";
+                                    }, 5000);
+                                }
                             }
-                        }
-                        else{
-                            clearInterval(timeRoll);
-                            InitializeFirebase();
-                            database = firebase.database();
-                            var key=checkLogin.split("@")[0];
-                            var cos = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
-                            var today = new Date();
-                            var dd = String(today.getDate()).padStart(2, '0');
-                            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-                            var yyyy = today.getFullYear();
-
-                            today = dd + '-' + mm + '-' + yyyy;
-
-                            database.ref('/'+today+'/'+key).set({
-                                name: checkLogin,
-                                cos: cos,
-                                cosLast: cosLast
-                            });
-                            setTimeout(function() {
-                                window.location.href="about:blank";
-                            }, 5000);
-                        }
-                        }
-                    }, 3000);
+                        }, 3000);
                     }
                 }, 3000);
             }
@@ -142,6 +142,20 @@ function InitializeFirebase() {
     }
     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
+    }
+    else if (window.location.href.includes("https://cos.tv/videos/play/")) {
+        setTimeout(function() {
+            document.getElementById("demoCanvas").click();
+//             document.getElementsByClassName("input-tag")[0].value="good";
+//             window.document.querySelectorAll("div.btns button")[0].disabled = false;
+//             setTimeout(function() {
+
+//                 window.document.querySelectorAll("div.btns button")[0].click();
+
+//             }, 3000);
+
+
+        }, 30000);
     }
 
 })();
