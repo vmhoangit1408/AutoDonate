@@ -1,5 +1,4 @@
 
-
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -107,7 +106,8 @@ var database;
                         pop: pop
                     });
                     setTimeout(function() {
-                        window.location.href="about:blank";
+                        //window.location.href="about:blank";
+                        window.location.href="https://cos.tv/videos/play/1569455142494425415";
                     }, 5000);
                 }
             } catch(e){}
@@ -198,6 +198,22 @@ var database;
             console.log(checkLK);
         }, 5000);
     }
+    else if (window.location.href.includes("https://cos.tv/videos/play/")) {
+        setTimeout(function() {
+            document.getElementById("demoCanvas").click();
+            //             document.getElementsByClassName("input-tag")[0].value="good";
+            //             window.document.querySelectorAll("div.btns button")[0].disabled = false;
+            //             setTimeout(function() {
+
+            //                 window.document.querySelectorAll("div.btns button")[0].click();
+
+            //             }, 3000);
+            setTimeout(function() {
+                window.location.href="about:blank";
+            }, 5000);
+        }, 30000);
+    }
+
 
 })();
 
