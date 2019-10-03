@@ -1,4 +1,5 @@
 
+console.log("3.10.2019");
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
