@@ -1,15 +1,15 @@
 
-
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
-        apiKey: "AIzaSyCagRQ-QZHZGxwR3oo-BOKXjCZm10ww-Rk",
-        authDomain: "cos-main.firebaseapp.com",
-        databaseURL: "https://cos-main.firebaseio.com",
-        projectId: "cos-main",
+        apiKey: "AIzaSyAhxv1SZG5Dnn8bok5-HEjM1ifn8DVmAlg",
+        authDomain: "cos-main-pha.firebaseapp.com",
+        databaseURL: "https://cos-main-pha.firebaseio.com",
+        projectId: "cos-main-pha",
         storageBucket: "",
-        messagingSenderId: "522305822487",
-        appId: "1:522305822487:web:6b82e333eb310290776152"
+        messagingSenderId: "1092301925981",
+        appId: "1:1092301925981:web:f7c729750ae6d2810c67b4",
+        measurementId: "G-RHKLMKD0R6"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -147,13 +147,13 @@ var database;
     else if (window.location.href.includes("https://cos.tv/videos/play/")) {
         setTimeout(function() {
             document.getElementById("demoCanvas").click();
-//             document.getElementsByClassName("input-tag")[0].value="good";
-//             window.document.querySelectorAll("div.btns button")[0].disabled = false;
-//             setTimeout(function() {
+            //             document.getElementsByClassName("input-tag")[0].value="good";
+            //             window.document.querySelectorAll("div.btns button")[0].disabled = false;
+            //             setTimeout(function() {
 
-//                 window.document.querySelectorAll("div.btns button")[0].click();
+            //                 window.document.querySelectorAll("div.btns button")[0].click();
 
-//             }, 3000);
+            //             }, 3000);
 
 
         }, 30000);
