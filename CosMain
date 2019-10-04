@@ -1,4 +1,6 @@
 console.log("4.10.2019");
+
+
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -141,12 +143,13 @@ var database;
         }, 5000);
     }
     else if (window.location.href=="https://cos.tv/property/") {
-        InitializeFirebase();
-        database = firebase.database();
+
         setTimeout(function() {
+            InitializeFirebase();
+            database = firebase.database();
             var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
             var key=checkLogin.split("@")[0];
-            var cos = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
+            var cos = parseFloat(window.document.querySelector("div.tab-coin div.page-tab.cos p.tab-info span").innerHTML);
             var today = new Date();
             var dd = String(today.getDate()).padStart(2, '0');
             var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
