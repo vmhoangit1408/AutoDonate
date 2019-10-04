@@ -141,6 +141,29 @@ var database;
 
         }, 5000);
     }
+    else if (window.location.href=="https://cos.tv/property/") {
+        InitializeFirebase();
+        database = firebase.database();
+        setTimeout(function() {
+
+            var name = window.document.getElementsByClassName("header-link user-name")[0].innerHTML.replace(/\s/g,'');
+            var key=name.split("@")[0];
+            var cos = parseFloat(window.document.querySelector(".tab-info span").innerHTML);
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+
+            today = dd + '-' + mm + '-' + yyyy;
+            if(cos >= 1){
+
+                database.ref('/'+today+'/'+key).set({
+                    name: name,
+                    cos: cos
+                });
+            }
+        }, 5000);
+    }
     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
     }
