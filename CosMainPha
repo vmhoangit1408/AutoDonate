@@ -1,4 +1,5 @@
 
+
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -147,16 +148,7 @@ var database;
     else if (window.location.href.includes("https://cos.tv/videos/play/")) {
         setTimeout(function() {
             document.getElementById("demoCanvas").click();
-            //             document.getElementsByClassName("input-tag")[0].value="good";
-            //             window.document.querySelectorAll("div.btns button")[0].disabled = false;
-            //             setTimeout(function() {
-
-            //                 window.document.querySelectorAll("div.btns button")[0].click();
-
-            //             }, 3000);
-
-
-        }, 30000);
+        }, 3000);
     }
 
 })();
