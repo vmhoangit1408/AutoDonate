@@ -2,19 +2,34 @@
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
-        apiKey: "AIzaSyCagRQ-QZHZGxwR3oo-BOKXjCZm10ww-Rk",
-        authDomain: "cos-main.firebaseapp.com",
-        databaseURL: "https://cos-main.firebaseio.com",
-        projectId: "cos-main",
+        apiKey: "AIzaSyB_C1FVm09Vtolp_EO8uX2qKoqMT2pU4z8",
+        authDomain: "cos-data-pha.firebaseapp.com",
+        databaseURL: "https://cos-data-pha.firebaseio.com",
+        projectId: "cos-data-pha",
         storageBucket: "",
-        messagingSenderId: "522305822487",
-        appId: "1:522305822487:web:6b82e333eb310290776152"
+        messagingSenderId: "319695774803",
+        appId: "1:319695774803:web:041cab14b24e1603"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 }
-var keyCap="0bb3580ec71ce9d43587c94a6e8b5b30";
+function InitializeFirebase1() {
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCbui36q1RzrCCBTYD5_ekfEG79Y8fBThQ",
+        authDomain: "pop-data-pha.firebaseapp.com",
+        databaseURL: "https://pop-data-pha.firebaseio.com",
+        projectId: "pop-data-pha",
+        storageBucket: "",
+        messagingSenderId: "674195748123",
+        appId: "1:674195748123:web:9685e4fab72db4cad50fbe"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+}
+var keyCap="bdbb099957aa3d828658df13ae020c29";
 var database;
+
 (function() {
     if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
         start_solve();
@@ -76,6 +91,21 @@ var database;
                     document.getElementsByClassName("inadequate fix-font-style")[0].click();
                 }
                 else{
+                    InitializeFirebase1();
+                    database = firebase.database();
+                    var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
+                    var key=checkLogin.split("@")[0];
+                    var today = new Date();
+                    var dd = String(today.getDate()).padStart(2, '0');
+                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                    var yyyy = today.getFullYear();
+                    today = dd + '-' + mm + '-' + yyyy;
+                    var pop=window.document.getElementsByClassName("ava-out pop")[0].innerText;
+                    database.ref('/'+today+'/'+key).set({
+                        name: checkLogin,
+                        pop: pop,
+                        time: new Date().getHours()
+                    });
                     setTimeout(function() {
                         var idVideo="1571382354161912582,1571382292835482762,1571380203644555036,1571376336024863742,1571464868903751450,1571373765751487668,1571458083936973131,1571404667445222763,1571386956299648191".split(",");
                         var curId=Math.floor(Math.random() * idVideo.length);
@@ -95,7 +125,8 @@ var database;
                     var today = new Date();
                     var timeCur=today.getMinutes();
                     console.log(timeCur);
-                    if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
+                    var timeStart=Math.floor(Math.random() * 4);
+                    if(parseInt(timeCur)>=timeStart && parseInt(timeCur)<=5){
                         var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
                         clearInterval(timeCheck);
                         var timeRoll=setInterval(function() {
@@ -125,7 +156,8 @@ var database;
                                     database.ref('/'+today+'/'+key).set({
                                         name: checkLogin,
                                         cos: cos,
-                                        cosLast: cosLast
+                                        cosLast: cosLast,
+                                        time: new Date().getHours()
                                     });
                                     setTimeout(function() {
                                         window.location.href="about:blank";
@@ -142,42 +174,29 @@ var database;
 
         }, 5000);
     }
-    else if (window.location.href=="https://cos.tv/property/") {
-
-        setTimeout(function() {
-            InitializeFirebase();
-            database = firebase.database();
-            var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
-            var key=checkLogin.split("@")[0];
-            var cos = parseFloat(window.document.querySelector("div.tab-coin div.page-tab.cos p.tab-info span").innerHTML);
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            var yyyy = today.getFullYear();
-
-            today = dd + '-' + mm + '-' + yyyy;
-
-            database.ref('/'+today+'/'+key).set({
-                name: checkLogin,
-                cos: cos
-            });
-            setTimeout(function() {
-                window.location.href="about:blank";
-            }, 5000);
-        }, 5000);
-    }
     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
     }
+    else if (window.location.href.includes("https://cos.tv/account/chain/bind/create")) {
+        setTimeout(function() {
+            document.getElementsByClassName("cos-btn-primary btn-submit")[0].click();
+            setTimeout(function() {
+                document.getElementsByClassName("input-radio")[2].click();
+                setTimeout(function() {
+                    document.getElementsByClassName("btn-confirm")[0].click();
+                    setTimeout(function() {
+                        window.location.href="https://cos.tv/subject/home/dist/daily.html#/";
+                    }, 3000);
+                }, 5000);
+            }, 5000);
+        }, 10000);
+    }
+    else if (window.location.href.includes("https://cos.tv/account/chain/bind/success")) {
+        setTimeout(function() {
+            window.location.href="https://cos.tv/subject/home/dist/daily.html#/";
+        }, 3000);
+    }
     else if (window.location.href.includes("https://cos.tv/videos/play/")) {
-        //         var idVideo="1570084374028463070,1570084463139666709,1570084502205306269,1570084522291635966,1570084535991461590,1570085487120454601,1570085507144163522,1570085528220307276,1570085556531981464,1570086376967818541,1570087863013776996,1570087710349328130,1570087715711660261,1570087130910778831,1570087127412389373,1570088367624569476,1570088369077356729,1570088807046244737,1570088827879097256,1570088835745599654".split(",");
-        //         var curId=Math.floor(Math.random() * idVideo.length);
-        //         setTimeout(function() {
-        //             document.getElementById("demoCanvas").click();
-        //             setTimeout(function() {
-        //                 window.location.href="https://cos.tv/videos/play/"+idVideo[curId];
-        //             }, 30000);
-        //         }, 30000);
         setTimeout(function() {
             try{
                 document.getElementsByClassName("btn claim-btn")[0].click();
@@ -210,6 +229,7 @@ var database;
             }, 5000);
         }, 5000);
     }
+
 })();
 
 //Start solve cap ------------------------------------------------------------------------------------------------------------------------------------------
