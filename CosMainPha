@@ -1,5 +1,4 @@
 
-
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -190,9 +189,18 @@ var database;
     }
     else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
         setTimeout(function() {
-            var curId=Math.floor(Math.random() * 2);
-            if(curId==1){
-                curId=2;
+            var curId=Math.floor(Math.random() * 7);
+            if(curId==0){
+                curId=7;
+            }
+            else if(curId==2){
+                curId=8;
+            }
+            else if(curId==3){
+                curId=9;
+            }
+            else if(curId==5){
+                curId=11;
             }
             try{
                 document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
