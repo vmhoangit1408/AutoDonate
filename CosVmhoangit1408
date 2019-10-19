@@ -1,5 +1,3 @@
-
-console.log("3.10.2019");
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -108,7 +106,9 @@ var database;
                         time: new Date().getHours()
                     });
                     setTimeout(function() {
-                        window.location.href="https://cos.tv/videos/play/1571383325532689875";
+                        var idVideo="1571382354161912582,1571382292835482762,1571380203644555036,1571376336024863742,1571464868903751450,1571373765751487668,1571458083936973131,1571404667445222763,1571386956299648191".split(",");
+                        var curId=Math.floor(Math.random() * idVideo.length);
+                        window.location.href="https://cos.tv/videos/play/"+idVideo[curId];
                     }, 5000);
                 }
             } catch(e){}
