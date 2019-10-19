@@ -1,5 +1,4 @@
 
-
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -178,13 +177,28 @@ var database;
         //             }, 30000);
         //         }, 30000);
         setTimeout(function() {
-            document.getElementsByClassName("btn claim-btn")[0].click();
+            try{
+                document.getElementsByClassName("btn claim-btn")[0].click();
+            } catch(e){}
             setTimeout(function() {
-                window.location.href="about:blank";
+                window.location.href="https://cos.tv/wallet/bp_vote";
             }, 3000);
         }, 5000);
     }
-
+    else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
+        setTimeout(function() {
+            var curId=Math.floor(Math.random() * 2);
+            if(curId==1){
+                curId=2;
+            }
+            try{
+                document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
+            } catch(e){}
+            setTimeout(function() {
+                window.location.href="about:blank";
+            }, 5000);
+        }, 5000);
+    }
 })();
 
 //Start solve cap ------------------------------------------------------------------------------------------------------------------------------------------
