@@ -208,19 +208,7 @@ var database;
     }
     else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
         setTimeout(function() {
-            var curId=Math.floor(Math.random() * 7);
-            if(curId==0){
-                curId=7;
-            }
-            else if(curId==2){
-                curId=8;
-            }
-            else if(curId==3){
-                curId=9;
-            }
-            else if(curId==5){
-                curId=11;
-            }
+            var curId=Math.floor(Math.random() * 21);
             try{
                 document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
             } catch(e){}
