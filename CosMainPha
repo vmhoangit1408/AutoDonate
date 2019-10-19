@@ -17,6 +17,7 @@ function InitializeFirebase() {
 }
 var keyCap="bdbb099957aa3d828658df13ae020c29";
 var database;
+
 (function() {
     if (window.location.href=="https://cos.tv/subject/home/dist/daily.html#/") {
         start_solve();
@@ -79,7 +80,7 @@ var database;
                 }
                 else{
                     setTimeout(function() {
-                        window.location.href="about:blank";
+                        window.location.href="https://cos.tv/videos/play/1571383325532689875";
                     }, 5000);
                 }
             } catch(e){}
@@ -142,15 +143,65 @@ var database;
 
         }, 5000);
     }
+    else if (window.location.href=="https://cos.tv/property/") {
+
+        setTimeout(function() {
+            InitializeFirebase();
+            database = firebase.database();
+            var checkLogin=window.document.getElementsByClassName("header-link avatar-link")[0].title.replace(/\s/g,'');
+            var key=checkLogin.split("@")[0];
+            var cos = parseFloat(window.document.querySelector("div.tab-coin div.page-tab.cos p.tab-info span").innerHTML);
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+
+            today = dd + '-' + mm + '-' + yyyy;
+
+            database.ref('/'+today+'/'+key).set({
+                name: checkLogin,
+                cos: cos
+            });
+            setTimeout(function() {
+                window.location.href="about:blank";
+            }, 5000);
+        }, 5000);
+    }
     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
     }
     else if (window.location.href.includes("https://cos.tv/videos/play/")) {
+        //         var idVideo="1570084374028463070,1570084463139666709,1570084502205306269,1570084522291635966,1570084535991461590,1570085487120454601,1570085507144163522,1570085528220307276,1570085556531981464,1570086376967818541,1570087863013776996,1570087710349328130,1570087715711660261,1570087130910778831,1570087127412389373,1570088367624569476,1570088369077356729,1570088807046244737,1570088827879097256,1570088835745599654".split(",");
+        //         var curId=Math.floor(Math.random() * idVideo.length);
+        //         setTimeout(function() {
+        //             document.getElementById("demoCanvas").click();
+        //             setTimeout(function() {
+        //                 window.location.href="https://cos.tv/videos/play/"+idVideo[curId];
+        //             }, 30000);
+        //         }, 30000);
         setTimeout(function() {
-            document.getElementById("demoCanvas").click();
-        }, 3000);
+            try{
+                document.getElementsByClassName("btn claim-btn")[0].click();
+            } catch(e){}
+            setTimeout(function() {
+                window.location.href="https://cos.tv/wallet/bp_vote";
+            }, 3000);
+        }, 5000);
     }
-
+    else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
+        setTimeout(function() {
+            var curId=Math.floor(Math.random() * 2);
+            if(curId==1){
+                curId=2;
+            }
+            try{
+                document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
+            } catch(e){}
+            setTimeout(function() {
+                window.location.href="about:blank";
+            }, 5000);
+        }, 5000);
+    }
 })();
 
 //Start solve cap ------------------------------------------------------------------------------------------------------------------------------------------
