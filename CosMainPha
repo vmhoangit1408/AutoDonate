@@ -1,3 +1,4 @@
+
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -186,29 +187,6 @@ var database;
             setTimeout(function() {
                 window.location.href="https://cos.tv/wallet/bp_vote";
             }, 3000);
-        }, 5000);
-    }
-    else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
-        setTimeout(function() {
-            var curId=Math.floor(Math.random() * 7);
-            if(curId==0){
-                curId=7;
-            }
-            else if(curId==2){
-                curId=8;
-            }
-            else if(curId==3){
-                curId=9;
-            }
-            else if(curId==5){
-                curId=11;
-            }
-            try{
-                document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
-            } catch(e){}
-            setTimeout(function() {
-                window.location.href="about:blank";
-            }, 5000);
         }, 5000);
     }
 })();
