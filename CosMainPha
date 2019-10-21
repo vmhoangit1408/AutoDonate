@@ -79,9 +79,7 @@ var database;
                 }
                 else{
                     setTimeout(function() {
-                        var idVideo="1571382354161912582,1571382292835482762,1571380203644555036,1571376336024863742,1571464868903751450,1571373765751487668,1571458083936973131,1571404667445222763,1571386956299648191".split(",");
-                        var curId=Math.floor(Math.random() * idVideo.length);
-                        window.location.href="https://cos.tv/videos/play/"+idVideo[curId];
+                        window.location.href="about:blank";
                     }, 5000);
                 }
             } catch(e){}
@@ -170,24 +168,6 @@ var database;
     }
     else if (window.location.href.includes("https://cos.tv/subject/main/build/login.html")) {
         start_solve();
-    }
-    else if (window.location.href.includes("https://cos.tv/videos/play/")) {
-        //         var idVideo="1570084374028463070,1570084463139666709,1570084502205306269,1570084522291635966,1570084535991461590,1570085487120454601,1570085507144163522,1570085528220307276,1570085556531981464,1570086376967818541,1570087863013776996,1570087710349328130,1570087715711660261,1570087130910778831,1570087127412389373,1570088367624569476,1570088369077356729,1570088807046244737,1570088827879097256,1570088835745599654".split(",");
-        //         var curId=Math.floor(Math.random() * idVideo.length);
-        //         setTimeout(function() {
-        //             document.getElementById("demoCanvas").click();
-        //             setTimeout(function() {
-        //                 window.location.href="https://cos.tv/videos/play/"+idVideo[curId];
-        //             }, 30000);
-        //         }, 30000);
-        setTimeout(function() {
-            try{
-                document.getElementsByClassName("btn claim-btn")[0].click();
-            } catch(e){}
-            setTimeout(function() {
-                window.location.href="https://cos.tv/wallet/bp_vote";
-            }, 3000);
-        }, 5000);
     }
 })();
 
