@@ -124,7 +124,7 @@ var database;
                     var timeCur=today.getMinutes();
                     console.log(timeCur);
                     var timeStart=Math.floor(Math.random() * 4);
-                    if(parseInt(timeCur)>=timeStart && parseInt(timeCur)<=5){
+                    if(parseInt(timeCur)>=0 && parseInt(timeCur)<=5){
                         var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
                         clearInterval(timeCheck);
                         var timeRoll=setInterval(function() {
