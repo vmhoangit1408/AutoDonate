@@ -1,5 +1,4 @@
 
-console.log("3.10.2019");
 function InitializeFirebase() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -108,9 +107,7 @@ var database;
                         time: new Date().getHours()
                     });
                     setTimeout(function() {
-                        var idVideo="1571382354161912582,1571382292835482762,1571380203644555036,1571376336024863742,1571464868903751450,1571373765751487668,1571458083936973131,1571404667445222763,1571386956299648191".split(",");
-                        var curId=Math.floor(Math.random() * idVideo.length);
-                        window.location.href="https://cos.tv/videos/play/"+idVideo[curId];
+                        window.location.href="about:blank";
                     }, 5000);
                 }
             } catch(e){}
@@ -126,7 +123,7 @@ var database;
                     var today = new Date();
                     var timeCur=today.getMinutes();
                     console.log(timeCur);
-                    var timeStart=Math.floor(Math.random() * 4);
+                    var timeStart=Math.floor(Math.random() * 2);
                     if(parseInt(timeCur)>=timeStart && parseInt(timeCur)<=5){
                         var cosLast = parseFloat(window.document.querySelector("a.property-val.cos-property").innerHTML);
                         clearInterval(timeCheck);
@@ -197,27 +194,27 @@ var database;
             window.location.href="https://cos.tv/subject/home/dist/daily.html#/";
         }, 3000);
     }
-    else if (window.location.href.includes("https://cos.tv/videos/play/")) {
-        setTimeout(function() {
-            try{
-                document.getElementsByClassName("btn claim-btn")[0].click();
-            } catch(e){}
-            setTimeout(function() {
-                window.location.href="https://cos.tv/wallet/bp_vote";
-            }, 3000);
-        }, 5000);
-    }
-    else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
-        setTimeout(function() {
-            var curId=Math.floor(Math.random() * 21);
-            try{
-                document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
-            } catch(e){}
-            setTimeout(function() {
-                window.location.href="about:blank";
-            }, 5000);
-        }, 5000);
-    }
+//     else if (window.location.href.includes("https://cos.tv/videos/play/")) {
+//         setTimeout(function() {
+//             try{
+//                 document.getElementsByClassName("btn claim-btn")[0].click();
+//             } catch(e){}
+//             setTimeout(function() {
+//                 window.location.href="https://cos.tv/wallet/bp_vote";
+//             }, 3000);
+//         }, 5000);
+//     }
+//     else if (window.location.href.includes("https://cos.tv/wallet/bp_vote")) {
+//         setTimeout(function() {
+//             var curId=Math.floor(Math.random() * 21);
+//             try{
+//                 document.getElementsByClassName("cos-btn-primary btn-vote")[curId].click();
+//             } catch(e){}
+//             setTimeout(function() {
+//                 window.location.href="about:blank";
+//             }, 5000);
+//         }, 5000);
+//     }
 
 })();
 
