@@ -107,8 +107,8 @@ var database;
                         time: new Date().getHours()
                     });
                     setTimeout(function() {
-                        //window.location.href="about:blank";
-                        window.location.href="https://cos.tv/popcorn/";
+                        window.location.href="about:blank";
+                        //window.location.href="https://cos.tv/popcorn/";
                     }, 5000);
                 }
             } catch(e){}
