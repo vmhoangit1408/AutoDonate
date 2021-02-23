@@ -1,0 +1,21 @@
+
+    try{
+        console.log(document.getElementsByClassName("button btn-primary watch-next-btn")[0].disabled);
+        document.getElementsByClassName("button btn-primary watch-next-btn")[0].focus();
+        var playNano = setInterval(function() {
+            document.getElementsByClassName("button btn-primary watch-next-btn")[0].focus();
+            if(!document.getElementsByClassName("button btn-primary watch-next-btn")[0].disabled){
+                document.getElementsByClassName("button btn-primary watch-next-btn")[0].click();
+            }
+        }, 5000);
+    }catch(e){
+        console.log("captcha");
+        var captcha = setInterval(function() {
+            console.log(document.getElementsByName("h-captcha-response")[0].value);
+            if(document.getElementsByName("h-captcha-response")[0].value != ""){
+                console.log("done");
+                document.getElementsByName("button")[0].click();
+            }
+        }, 5000);
+
+    }
